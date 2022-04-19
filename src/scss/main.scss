@@ -1,0 +1,79 @@
+@use "extends" as *;
+@use "functions" as *;
+@use "colors";
+@use "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main {
+    background-color: colors.$background;
+    height: 100vh;
+    font-family: fonts.$roboto-400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .curriculo {
+        background-color: colors.$background-curriculo;
+        height: 885px;
+        width: 650px;
+        padding: 20px;
+        border: solid black 2px;
+
+        .personal-information {
+            background-color: colors.$background-personal-information;
+            height: 885px;
+            width: 35%;
+            float: left;
+            display: flex;
+            flex-direction: column;
+
+            .profile-img {
+                flex-grow: 1;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .perfil {
+                @extend %personal-information-style;
+                @extend %personal-information-section
+            }
+
+            .direccion {
+                @extend %personal-information-style;
+                @extend %personal-information-section
+            }
+
+            .contacto {
+                @extend %personal-information-style;
+                @extend %personal-information-section
+            }
+
+            .idiomas {
+                @extend %personal-information-style;
+                @extend %personal-information-section;
+
+                .español {
+                    @include set-percent-language($percent: 100%)
+                }
+
+                .ingles {
+                    @include set-percent-language($percent: 40%)
+                }
+            }
+        }
+
+        .time-line {
+            background-color: colors.$background-timeline;
+            height: 885px;
+            width: 65%;
+            float: left;
+        }
+    }
+}

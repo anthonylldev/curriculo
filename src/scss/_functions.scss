@@ -1,0 +1,10 @@
+@use "colors";
+
+@mixin set-percent-language($percent: 0) {
+    background-color: colors.$on-background-personal-information;
+    border-radius: 10px;
+    height: 10px;
+    width: $percent;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

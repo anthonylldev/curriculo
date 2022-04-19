@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main .curriculo .personal-information .perfil, main .curriculo .personal-information .direccion, main .curriculo .personal-information .contacto, main .curriculo .personal-information .idiomas {
+  margin: 15px;
+  flex-grow: 2;
+  color: White;
+}
+
+main .curriculo .personal-information .perfil p strong::after, main .curriculo .personal-information .direccion p strong::after, main .curriculo .personal-information .contacto p strong::after, main .curriculo .personal-information .idiomas p strong::after {
+  content: "\a";
+  white-space: pre;
+}
+
+main .curriculo .personal-information .perfil:not(:last-child), main .curriculo .personal-information .direccion:not(:last-child), main .curriculo .personal-information .contacto:not(:last-child), main .curriculo .personal-information .idiomas:not(:last-child) {
+  border-bottom: solid 5px black;
+}
+main .curriculo .personal-information .perfil h2, main .curriculo .personal-information .direccion h2, main .curriculo .personal-information .contacto h2, main .curriculo .personal-information .idiomas h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+main .curriculo .personal-information .perfil p, main .curriculo .personal-information .direccion p, main .curriculo .personal-information .contacto p, main .curriculo .personal-information .idiomas p {
+  font-size: 14px;
+}
+main .curriculo .personal-information .perfil p strong, main .curriculo .personal-information .direccion p strong, main .curriculo .personal-information .contacto p strong, main .curriculo .personal-information .idiomas p strong {
+  color: #e81862;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+main {
+  background-color: DarkGray;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .curriculo {
+  background-color: White;
+  height: 885px;
+  width: 650px;
+  padding: 20px;
+  border: solid black 2px;
+}
+main .curriculo .personal-information {
+  background-color: #333233;
+  height: 885px;
+  width: 35%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+main .curriculo .personal-information .profile-img {
+  flex-grow: 1;
+}
+main .curriculo .personal-information .profile-img img {
+  width: 100%;
+}
+main .curriculo .personal-information .idiomas .español {
+  background-color: White;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+main .curriculo .personal-information .idiomas .ingles {
+  background-color: White;
+  border-radius: 10px;
+  height: 10px;
+  width: 40%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+main .curriculo .time-line {
+  background-color: White;
+  height: 885px;
+  width: 65%;
+  float: left;
+}
+main .curriculo .time-line::before {
+  background-color: White;
+  border-radius: 10px;
+  height: 10px;
+  width: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

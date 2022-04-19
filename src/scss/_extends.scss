@@ -1,0 +1,37 @@
+@use "colors";
+
+%personal-information-style {
+    margin: 15px;
+    flex-grow: 2;
+    color: colors.$on-background-personal-information;
+}
+
+%line-break {
+    content: "\A";
+    white-space: pre;
+}
+
+%personal-information-section {
+
+    &:not(:last-child) {
+        border-bottom: solid 5px black;
+
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 14px;
+
+        strong {
+            color: colors.$primary;
+        }
+
+        strong::after {
+            @extend %line-break;
+        }
+    }
+}
