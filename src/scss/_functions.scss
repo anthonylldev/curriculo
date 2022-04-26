@@ -8,3 +8,52 @@
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
+@mixin timeline-information-section(
+    $title:"title",
+    $dates:"0000 - 0000",
+    $information-dates:"information",
+    $sections: 1
+) {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        font-size: 1.3em;
+        margin: 0 0 20px 20px;
+        width: 100%;
+
+        &:before {
+            content: $title;
+        }
+    }
+
+    .chronology {
+        display: flex;
+        flex-direction: row;
+
+        &:before {
+            width: 150px;
+            content: $dates;
+            white-space: pre;
+            background-color: white;
+            text-align: end;
+        }
+
+        .line {
+            background-color: colors.$primary;
+            width: 5px;
+            height: 30px * $sections;
+            margin: 0 20px;
+        }
+
+        &:after {
+            width: 150px;
+            content: $information-dates;
+            white-space: pre;
+            background-color: white;
+        }
+    }
+}

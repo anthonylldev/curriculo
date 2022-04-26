@@ -40,30 +40,26 @@ main {
                 }
             }
 
-            .perfil {
-                @extend %personal-information-style;
+            .profile {
                 @extend %personal-information-section
             }
 
-            .direccion {
-                @extend %personal-information-style;
+            .direction {
                 @extend %personal-information-section
             }
 
-            .contacto {
-                @extend %personal-information-style;
+            .contact {
                 @extend %personal-information-section
             }
 
-            .idiomas {
-                @extend %personal-information-style;
+            .languages {
                 @extend %personal-information-section;
 
-                .español {
+                .spanish {
                     @include set-percent-language($percent: 100%)
                 }
 
-                .ingles {
+                .english {
                     @include set-percent-language($percent: 40%)
                 }
             }
@@ -74,6 +70,90 @@ main {
             height: 885px;
             width: 65%;
             float: left;
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                height: 200px;
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:after {
+                    content: "Anthony Fabian Leon Lucero";
+                    font-size: 1.7em;
+                    font-weight: bold;
+                }
+            }
+
+            .education {
+                @include timeline-information-section(
+                        $title: "Educación",
+                        $dates: "2020 - 2022\A\A 2018 - 2020",
+                        $information-dates: "I.E.S. Alfonso X el Sabio\A\A I.E.S. Miguel Hernández",
+                        $sections: 2
+                )
+            }
+
+            .experience {
+                @include timeline-information-section(
+                        $title: "Experiencia",
+                        $dates: "2021 - 2021\A\A 2019 - 2020",
+                        $information-dates: "Grupo el Ciruelo\A\A Moyca grapes S.L.",
+                        $sections: 2
+                )
+            }
+
+            .others {
+                @include timeline-information-section(
+                        $title: "Otros",
+                        $dates: "2018 - Actualidad",
+                        $information-dates: "Voluntario Protección Civil"
+                )
+            }
+
+            .knowledge {
+                flex-grow: 2;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .title {
+                    font-size: 1.3em;
+                    margin: 0 0 20px 20px;
+                    width: 100%;
+
+                    &:before {
+                        content: "Conocimientos";
+                    }
+                }
+
+                .images {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+
+                    .docker {
+                        &:before {
+                            content: url("https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white");
+                        }
+                    }
+
+                    .github {
+                        &:before {
+                            content: url("https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white");
+                        }
+                    }
+
+                    .angular {
+                        &:before {
+                            content: url("https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white");
+                        }
+                    }
+                }
+            }
         }
     }
 }
