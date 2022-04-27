@@ -155,5 +155,202 @@ main {
                 }
             }
         }
+
+
+        @media (max-width: 576px) {
+            .personal-information {
+                .profile {
+                    h2 {
+                        font-size: 1.3em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+                .direction {
+                    h2 {
+                        font-size: 1.3em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+
+                .contact {
+                    h2 {
+                        font-size: 1.3em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .time-line {
+                .name {
+                    font-size: 0.7em;
+                }
+
+                .education {
+                    padding: 5px;
+
+                    .title {
+                        font-size: 1em;
+                    }
+
+                    .chronology {
+                        width: 100%;
+                        font-size: 0.8em;
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+
+                        .line {
+                            display: none;
+                        }
+                    }
+                }
+
+                .experience {
+                    padding: 5px;
+
+                    .title {
+                        font-size: 1em;
+                    }
+
+                    .chronology {
+                        width: 100%;
+                        font-size: 0.8em;
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+
+                        .line {
+                            display: none;
+                        }
+                    }
+                }
+
+                .others {
+                    padding: 5px;
+
+                    .title {
+                        font-size: 1em;
+                    }
+
+                    .chronology {
+                        width: 100%;
+                        font-size: 0.8em;
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+
+                        .line {
+                            display: none;
+                        }
+                    }
+                }
+
+                .knowledge {
+                    .images {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            .personal-information {
+                .contact {
+                    p {
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .time-line {
+                .education {
+                    margin-left: 20px;
+
+                    .chronology {
+                        width: 100%;
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+                    }
+                }
+
+                .experience {
+                    margin-left: 20px;
+
+                    .chronology {
+                        width: 100%;
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+                    }
+                }
+
+                .others {
+                    margin-left: 20px;
+                    width: 70%;
+
+                    .chronology {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        &:before {
+                            text-align: start;
+                        }
+
+                        .line {
+                            display: none;
+                        }
+
+
+                    }
+                }
+
+                .knowledge {
+                    margin-left: 20px;
+
+
+                    .chronology {
+                        width: 100%;
+
+
+                        &:before {
+                            width: 100px;
+                            text-align: start;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
     }
 }

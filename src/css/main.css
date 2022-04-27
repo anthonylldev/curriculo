@@ -234,5 +234,137 @@ main .curriculo .time-line .knowledge .images .github:before {
 main .curriculo .time-line .knowledge .images .angular:before {
   content: url("https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white");
 }
+@media (max-width: 576px) {
+  main .curriculo .personal-information .profile h2 {
+    font-size: 1.3em;
+  }
+  main .curriculo .personal-information .profile p {
+    font-size: 0.8em;
+  }
+  main .curriculo .personal-information .direction h2 {
+    font-size: 1.3em;
+  }
+  main .curriculo .personal-information .direction p {
+    font-size: 0.8em;
+  }
+  main .curriculo .personal-information .contact h2 {
+    font-size: 1.3em;
+  }
+  main .curriculo .personal-information .contact p {
+    font-size: 0.8em;
+  }
+  main .curriculo .personal-information .contact p:last-child {
+    display: none;
+  }
+  main .curriculo .time-line .name {
+    font-size: 0.7em;
+  }
+  main .curriculo .time-line .education {
+    padding: 5px;
+  }
+  main .curriculo .time-line .education .title {
+    font-size: 1em;
+  }
+  main .curriculo .time-line .education .chronology {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  main .curriculo .time-line .education .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+  main .curriculo .time-line .education .chronology .line {
+    display: none;
+  }
+  main .curriculo .time-line .experience {
+    padding: 5px;
+  }
+  main .curriculo .time-line .experience .title {
+    font-size: 1em;
+  }
+  main .curriculo .time-line .experience .chronology {
+    width: 100%;
+    font-size: 0.8em;
+  }
+  main .curriculo .time-line .experience .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+  main .curriculo .time-line .experience .chronology .line {
+    display: none;
+  }
+  main .curriculo .time-line .others {
+    padding: 5px;
+  }
+  main .curriculo .time-line .others .title {
+    font-size: 1em;
+  }
+  main .curriculo .time-line .others .chronology {
+    width: 100%;
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .curriculo .time-line .others .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+  main .curriculo .time-line .others .chronology .line {
+    display: none;
+  }
+  main .curriculo .time-line .knowledge .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  main .curriculo .personal-information .contact p:last-child {
+    display: none;
+  }
+  main .curriculo .time-line .education {
+    margin-left: 20px;
+  }
+  main .curriculo .time-line .education .chronology {
+    width: 100%;
+  }
+  main .curriculo .time-line .education .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+  main .curriculo .time-line .experience {
+    margin-left: 20px;
+  }
+  main .curriculo .time-line .experience .chronology {
+    width: 100%;
+  }
+  main .curriculo .time-line .experience .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+  main .curriculo .time-line .others {
+    margin-left: 20px;
+    width: 70%;
+  }
+  main .curriculo .time-line .others .chronology {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .curriculo .time-line .others .chronology:before {
+    text-align: start;
+  }
+  main .curriculo .time-line .others .chronology .line {
+    display: none;
+  }
+  main .curriculo .time-line .knowledge {
+    margin-left: 20px;
+  }
+  main .curriculo .time-line .knowledge .chronology {
+    width: 100%;
+  }
+  main .curriculo .time-line .knowledge .chronology:before {
+    width: 100px;
+    text-align: start;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
